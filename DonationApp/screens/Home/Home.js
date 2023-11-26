@@ -1,14 +1,13 @@
 import React from 'react';
 import style from './style';
-import {View, SafeAreaView, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import globalStyle from '../../assets/styles/globalStyle';
+import Header from '../../components/Header/Header';
 
 const Home = () => {
   return (
     <SafeAreaView style={[globalStyle.backgroundWhite, globalStyle.flex]}>
-      <View>
-        <Text>Hello World!</Text>
-      </View>
+      <Header title={'Emmanuel Michel'} type={1} />
     </SafeAreaView>
   );
 };
